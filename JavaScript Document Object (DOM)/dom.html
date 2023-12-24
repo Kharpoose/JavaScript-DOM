@@ -9,17 +9,30 @@
     <button>
         Hello
     </button>
+    <button class="js-button">
+        Second button
+    </button>
     <script>
+        console.log(document.querySelector('button').innerHTML);
 
-        console.log(document.title);
+        document.querySelector('button').innerHTML = 'Changed';
 
-        console.log(document.body);
-
-        console.log(typeof document.body);
-
-        console.log(document.body.innerHTML);
-
-        document.body.innerHTML = '<button> Good Job </button>';
+        console.log(document.querySelector('.js-button'));
+        document.querySelector('.js-button').innerHTML = 'Changed xdd';
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+        
+        /*
+                console.log(document.title);
+        
+                console.log(document.body);
+        
+                console.log(typeof document.body);
+        
+                console.log(document.body.innerHTML);
+       
+                document.body.innerHTML = '<button> Good Job </button>';
+         */
         // document.body.innerHTML = 'Hello';
         // document.title = 'Good Job';
     </script>
